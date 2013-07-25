@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                    <img src="img/OzBerryPi.png" style="padding: 50px;">
+					<h3>February 2013 : Alex Bradbury </h3>
+					<p>
+            Twitter: <a href="#">#ozberrypi #RaspberryJam</a>
+          </p>
+					<p>
+          	<small> <a href="http://www.ozberrypi.org/">http://www.ozberrypi.org/</a></small>
+					</p>
+				</section>
+				</section>
+
+				<section>
+					<h2>Welcome!</h2>
+					<p>
+          First timers?
+					</p>
+				</section>
+        
+				<section>
+					<section>
+						<h2>News</h2>
+					<ul>
+            <li class="fragment">Mailing List: <a href="#">ozberrypi@googlegroups.com</a></li>
+						<li class="fragment">Wiki: <a href="#">http://wiki.ozberrypi.org</a></li>
+						<li class="fragment">GitHub: <a href="#">https://github.com/ozberrypi</a></li>
+					</ul>
+					</section>
+          <section>
+						<h2>The Model A</h2>
+            <img src="img/DSC_3793-1024x734.jpg" />
+          </section>
+           <section>
+            <img src="img/DSC_3796-1024x698.jpg" />
+          </section>
+        </section>  
+          
+        <section>
+						<h2>Please Welcome </h2>
+            <h3>Alex Bradbury</h3>
+            <img src="img/Alex.jpg" />
+        </section>
+        
+				<section>
+					<h2>Door Prize...</h2>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>Thank you!</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
