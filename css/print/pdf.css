@@ -15,6 +15,14 @@
 	-webkit-print-color-adjust: exact;
 }
 
+/*
+   fix for the ugly pdf print background
+*/
+body {
+  background: #444444;
+  background-color: #444444; 
+}
+
 body {
 	font-size: 18pt;
 	width: 297mm;
