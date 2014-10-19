@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OzBerryPi.org</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+
+    	<!-- For syntax highlighting -->
+   	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <img src="img/OzBerryLogo-500px.png" style="padding-bottom:: 40px; background:none; border: 0px; box-shadow: 0 0 0px rgba(0, 0, 0, 0);">
+            <h3>Monthly hackspace</h3>
+            <h4>October 2014</h4>
+
+        </section>
+        <section>
+            <h2>Welcome!</h2>
+            <ul>
+                <li class="fragment">First Timers?</li>
+            </ul>
+        </section>
+        <section>
+            <blockquote>
+                Maker culture emphasises learning-through-doing (constructivism) in a social environment.
+            </blockquote>
+            <br>
+            <blockquote>
+                Maker culture emphasises informal, networked, peer-led, and shared learning motivated by fun and self-fulfilment.
+            </blockquote>
+            <br>
+            <p>
+               - Wikipedia
+            </p>
+        </section>
+
+        <section>
+            <img src="img/ESP8266.jpg"/>
+            <h2>ESP8266</h2>
+        </section>
+
+        <section>
+            <img src="img/PiEleven.jpg" >
+            <h2>PiLeven</h2>
+        </section>
+
+        <section>
+            <img src="img/Wifig25.jpg" >
+            <h2>Wifig25</h2>
+            http://www.armdevs.com/
+        </section>
+
+
+        <section>
+            <h2>Micro Talks</h2>
+            <ul>
+                <li>Charles Fu</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>News</h2>
+            <ul>
+                <li>Sydney Internet of things - Thursday, October 23, 2014</li>
+                <li>OzBerry "Level Up" series - speakers: expressions of interest</li>
+                <li>Flea Market</li>
+                <li>News from the floor?</li>
+            </ul>
+        </section>
+        
+        <section>
+            <section>
+                <h2>OzBerryPi Monthly Maker Space</h2>
+                <ul>
+                    <li class="fragment">Mailing List: <a href="#">ozberrypi@googlegroups.com</a></li>
+                    <li class="fragment">Web: <a href="#">http://www.ozberrypi.org</a></li>
+                    <li class="fragment">GitHub: <a href="#">https://github.com/ozberrypi</a></li>
+                    <li class="fragment">Meetup: <a href="#">http://www.meetup.com/OzBerryPi/</a></li>
+                </ul>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+</body>
+</html>
